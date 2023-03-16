@@ -133,7 +133,7 @@
             div.className = "grid-item";
     
             const name = index === 4 ? dino.name : dino.species;
-            const fact = index === 4 ? "" : `<p>${dino.fact}</p>`;
+            const fact = index === 4 ? "" : dino.species === 'Pigeon' ? `<p>All birds are dinosaurs.</p>` : `<p>${dino.fact}</p>`;
         
             div.innerHTML = `<h3>${name}</h3>
                              <img src="${dino.img}" alt="${name} image">
